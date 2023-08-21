@@ -1,4 +1,5 @@
 <?php
+    /* EVITAR EL CACHE EN LOS ARCHIVOS */
     $v = random_int(1, 999999);
 
     $pagina = basename($_SERVER['PHP_SELF']);
@@ -14,7 +15,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso al Sistema - <?php echo $company->empresa;?></title>
     <!-- Jquery -->
-    <script src="js/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo url();?>js/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <link rel="stylesheet" href="<?php echo url();?>vendor/bootstrap/css/bootstrap.min.css">
+    <script src="<?php echo url();?>vendor/popper/popper.min.js"></script>
+    <script src="<?php echo url();?>vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo url();?>vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- BootstrapTable -->
+    <link rel="stylesheet" href="<?php echo url();?>vendor/bootstrap-table/bootstrap-table.css">
+    <script src="<?php echo url();?>vendor/bootstrap-table/bootstrap-table.js"></script>
+    <script src="<?php echo url();?>vendor/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+    <script src="<?php echo url();?>vendor/bootstrap-table/extensions/export/tableExport.js"></script>
+    <script src="<?php echo url();?>vendor/bootstrap-table/locale/bootstrap-table-es-CL.min.js"></script>
+    <script src="<?php echo url();?>vendor/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <!-- BootstrapTable CustomView -->
+    <script src="<?php echo url();?>vendor/bootstrap-table/extensions/custom-view/bootstrap-table-custom-view.js"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo url();?>images/icon/favicon.png" />
     <!-- Icono de Google -->

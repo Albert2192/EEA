@@ -153,9 +153,11 @@
 }
 .direct_message_top_profile div h5{
     font-size: 14px;
+    margin-bottom: 0px !important;
 }
 .direct_message_top_profile div p{
     font-size: 12px;
+    margin-bottom: 0px !important;
 }
 .direct_message_img{
     width: 50px;
@@ -245,6 +247,10 @@
     margin: 10px auto;
     /* border-radius: 50%; */
     position: relative;
+}
+
+.contact_globe_name p, .contact_globe_name span{
+    margin-bottom: 0px !important;
 }
 .contact_globe img{
     object-fit: cover;
@@ -357,6 +363,7 @@
 }
 .label_container label{
     font-size: 14px;
+    margin-bottom: 0px !important;
 }
 .label_container input{
     font-size: 14px;
@@ -399,6 +406,10 @@
     transition: all .5s ease-in-out;
     outline: none;
 }
+
+.acceder p{
+    margin-bottom: 0px !important;
+}
 .acceder:hover{
     background: var(--primary-hover);
 }
@@ -406,7 +417,8 @@
 /* ESTILOS ALERTAS */
 .alert{
     position: absolute;
-    top: -40px;
+    /* top: -40px; */
+    top: -50px;
     right: calc(50vw - 145px);
     width: 290px;
     background: var(--danger);
@@ -426,6 +438,10 @@
     top: 30px;
 }
 
+#alert_message{
+    margin-bottom: 0px !important;
+}
+
 .logo_empresa{
     /* filter: grayscale(100%); */
 }
@@ -443,6 +459,7 @@
 }
 
 .footer p{
+    margin-bottom: 0px !important;
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--light);
@@ -480,6 +497,7 @@
 }
 .overlay_container p{
     font-size: 14px;
+    margin-bottom: 0px !important;
 }
 
 .overlay_container i{
@@ -554,6 +572,10 @@
     display: inline-block;
     font-size: 14px;
     color: #fff;
+}
+
+.sidebar_profile_text p{
+    margin-bottom: 0px !important;
 }
 
 .profile_text_first{
@@ -687,6 +709,7 @@
 .menu_perfil_text p{
     font-size: 12px;
     color: var(--light);
+    margin-bottom: 0px !important;
 }
 
 .menu_perfil_text p:first-child{
@@ -719,4 +742,21 @@
 }
 .menu_perfil_body ul li:last-child :hover{
     color: var(--danger);
+}
+
+
+/* MOVIL STILES */
+
+.main_topbar_movil{
+    display: none;
+}
+
+@media screen and (min-width: 360px) {
+    .main_topbar{
+        /* background: red !important;
+        display: none; */
+    }
+    .main_topbar_movil{
+        display: block;
+    }
 }
