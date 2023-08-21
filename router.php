@@ -38,7 +38,7 @@ function any($route, $path_to_include)
 }
 function route($route, $path_to_include)
 {
-    $ROOT = $_SERVER['DOCUMENT_ROOT'] . "/Sistema_Gestion";
+    $ROOT = $_SERVER['DOCUMENT_ROOT'] . "/EEA";
 
     if ($route == "error/404") {
         include_once "$ROOT/$path_to_include";
